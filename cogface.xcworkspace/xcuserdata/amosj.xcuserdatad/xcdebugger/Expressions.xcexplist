@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "VideoViewController.captureOutput(AVCaptureOutput!, didDrop : CMSampleBuffer!, from : AVCaptureConnection!) -&gt; ():VideoViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "stillImage.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PhotoViewController.(touchUpInside(Any) -&gt; ()).(closure #1):PhotoViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "JSON(result)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Face.requestWith(data : Data, url : URL, method : String, contentType : String, ocpApimSubscriptionKey : String, completion : (String) -&gt; ()?) -&gt; ():Face.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

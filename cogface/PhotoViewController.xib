@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoViewController" customModule="cogface" customModuleProvider="target">
+            <connections>
+                <outlet property="fakeButton" destination="8RV-uB-FYn" id="9Lb-0m-Wiw"/>
+                <outlet property="fakeText" destination="gq3-me-Jd3" id="2Qa-0y-Yyi"/>
+                <outlet property="imagePicked" destination="5VU-tk-pbO" id="sRQ-uy-c7p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="News1" translatesAutoresizingMaskIntoConstraints="NO" id="5VU-tk-pbO">
+                    <rect key="frame" x="0.0" y="86" width="375" height="387"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RV-uB-FYn">
+                    <rect key="frame" x="42" y="597" width="290" height="50"/>
+                    <color key="backgroundColor" red="0.16862745100000001" green="0.64705882349999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="hIi-bX-GR6"/>
+                    </constraints>
+                    <state key="normal" title="Emotion">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="touchUpInside:" destination="-1" eventType="touchUpInside" id="BRZ-8R-gfx"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gq3-me-Jd3">
+                    <rect key="frame" x="16" y="221" width="343" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="zMT-oC-w42"/>
+                    </constraints>
+                    <color key="textColor" red="0.16862745100000001" green="0.64705882349999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIe-sS-hKj">
+                    <rect key="frame" x="42" y="539" width="290" height="50"/>
+                    <color key="backgroundColor" red="0.16862745100000001" green="0.64705882349999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5h4-zU-ede"/>
+                    </constraints>
+                    <state key="normal" title="Open Camera">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="openCameraButtonWithSender:" destination="-1" eventType="touchUpInside" id="wrz-ga-0Yd"/>
+                        <action selector="openPhotoLibraryButtonWithSender:" destination="-1" eventType="touchUpInside" id="KWg-3m-MAC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tb-E8-1Xs">
+                    <rect key="frame" x="42" y="481" width="290" height="50"/>
+                    <color key="backgroundColor" red="0.16862745100000001" green="0.64705882349999999" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="vjn-PA-mP3"/>
+                    </constraints>
+                    <state key="normal" title="Open Photos">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="openPhotoLibraryButtonWithSender:" destination="-1" eventType="touchUpInside" id="wT7-hn-2Gg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nIe-sS-hKj" firstAttribute="top" secondItem="9tb-E8-1Xs" secondAttribute="bottom" constant="8" symbolic="YES" id="5kc-lc-DuF"/>
+                <constraint firstItem="5VU-tk-pbO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="86" id="6af-P1-ycD"/>
+                <constraint firstItem="8RV-uB-FYn" firstAttribute="top" secondItem="nIe-sS-hKj" secondAttribute="bottom" constant="8" symbolic="YES" id="Bmf-DT-qep"/>
+                <constraint firstItem="9tb-E8-1Xs" firstAttribute="trailing" secondItem="nIe-sS-hKj" secondAttribute="trailing" id="J7j-C5-Czz"/>
+                <constraint firstItem="gq3-me-Jd3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="NOS-mu-VF1"/>
+                <constraint firstItem="9tb-E8-1Xs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="42" id="RvJ-d4-wci"/>
+                <constraint firstItem="gq3-me-Jd3" firstAttribute="centerX" secondItem="9tb-E8-1Xs" secondAttribute="centerX" id="Svg-ym-ywP"/>
+                <constraint firstItem="9tb-E8-1Xs" firstAttribute="top" secondItem="5VU-tk-pbO" secondAttribute="bottom" constant="8" symbolic="YES" id="VuJ-bs-fh4"/>
+                <constraint firstItem="5VU-tk-pbO" firstAttribute="centerX" secondItem="gq3-me-Jd3" secondAttribute="centerX" id="aq7-Zg-2Qy"/>
+                <constraint firstAttribute="bottom" secondItem="8RV-uB-FYn" secondAttribute="bottom" constant="20" id="eZD-5i-IQe"/>
+                <constraint firstItem="nIe-sS-hKj" firstAttribute="trailing" secondItem="8RV-uB-FYn" secondAttribute="trailing" id="kNu-rM-Cwc"/>
+                <constraint firstItem="nIe-sS-hKj" firstAttribute="leading" secondItem="8RV-uB-FYn" secondAttribute="leading" id="oG5-cP-XVL"/>
+                <constraint firstItem="gq3-me-Jd3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="221" id="pfz-Us-RCm"/>
+                <constraint firstAttribute="trailing" secondItem="5VU-tk-pbO" secondAttribute="trailing" id="rhq-cV-QLu"/>
+                <constraint firstItem="5VU-tk-pbO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xYo-2S-Cb5"/>
+                <constraint firstItem="9tb-E8-1Xs" firstAttribute="leading" secondItem="nIe-sS-hKj" secondAttribute="leading" id="yxI-ZN-ZN7"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="News1" width="944" height="531"/>
+    </resources>
+</document>
